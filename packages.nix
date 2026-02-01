@@ -34,6 +34,7 @@ in
      river
      obs-studio
      brave
+     vivaldi
      qutebrowser
      telegram-desktop
      element-desktop
@@ -57,6 +58,7 @@ in
      wl-clipboard
      lf
      fastfetch
+     neofetch
      yazi
      ranger
      audacity

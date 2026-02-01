@@ -14,7 +14,7 @@
       # Imports
       imports = [
           inputs.spicetify-nix.homeManagerModules.default 
-          ./hm-modules/waybar/waybar_niri.nix
+          ./hm-modules/waybar/waybar_mango.nix
           ./hm-modules/hyprland/hyprland.nix
           ./hm-modules/niri/niri.nix
           ./hm-modules/foot/foot.nix
@@ -23,11 +23,11 @@
           ./hm-modules/zathura/zathura.nix
           ./hm-modules/swaylock/swaylock.nix
           ./hm-modules/rofi/rofi.nix
-          /* ./hm-modules/neofetch/neofetch.nix */
+          ./hm-modules/neofetch/neofetch.nix 
           ./hm-modules/neovim/nvchad.nix
           ./hm-modules/betterdiscord/betterdiscord.nix
-          /* ./hm-modules/niri/niri.nix */
-         /*  ./hm-modules/swayfx/swayfx.nix */
+          ./hm-modules/niri/niri.nix 
+         ./hm-modules/swayfx/swayfx.nix 
       ];
 
       # Enable GTK themes

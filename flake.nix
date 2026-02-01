@@ -23,7 +23,9 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.lix.follows = "lix";
-    }; 
+    };
+
+    mango.url = "github:DreamMaoMao/mango";
   };
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }:
@@ -36,6 +38,12 @@
           ./configuration.nix
           home-manager.nixosModules.home-manager
 
+          # Add mango nixos module
+          inputs.mango.nixosModules.mango
+            {
+            programs.mango.enable = true;
+            }
+
           ({self, pkgs, ... }: {
             environment.systemPackages = with pkgs; [
             ];
@@ -44,7 +52,14 @@
             home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.john1917 =  import ./home.nix; 
+            users.john1917.imports = [ 
+            ./home.nix 
+            ./mango.nix
+            ]
+            ++ [
+            # Add mango hm module
+            inputs.mango.hmModules.mango
+            ];
             extraSpecialArgs = { inherit inputs; };
            };
           }
