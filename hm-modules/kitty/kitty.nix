@@ -198,7 +198,7 @@ color16 #d65d0e
     background_opacity 0.95
   '';
 
- xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+ xdg.configFile."/home/john1917/.config/kitty/kitty.decayce.conf".text = ''
 background #0d0f18
 foreground #a5b6cf
 selection_background #242942
@@ -239,6 +239,50 @@ color15 #cbced3
 # Opacity
     background_opacity 0.95
   '';
+
+xdg.configFile."/home/john1917/.config/kitty/kitty.conf".text = ''
+background #0a0c0f
+foreground #a1a8b3
+selection_background #282e33
+selection_foreground #a1a8b3
+url_color #6dc799
+cursor #a1a8b3
+
+# normal
+color0 #202529
+color1 #cc575c
+color2 #6dc799
+color3 #debf7f
+color4 #6696d6
+color5 #b47ed9
+color6 #69add4
+color7 #cbced3
+
+# bright
+color8  #282e33
+color9  #e87177
+color10 #88e3b5
+color11 #ebd899
+color12 #81b2eb
+color13 #d099eb
+color14 #84c9eb
+color15 #e6e9eb
+
+# Font
+    font_family      Iosevka Nerd Font
+    font_size      13.0
+
+# Close window confirmation 
+    confirm_os_window_close 0
+
+# Padding
+    window_margin_width 12
+
+# Opacity
+    background_opacity 0.95
+  '';
+
+
 
  xdg.configFile."/home/john1917/.config/kitty/kitty.everblush.conf".text = ''
 background #141b1e

@@ -270,7 +270,7 @@
       highlight-active-color = "#f2f4f8"; */ 
 
     # Decayce Theme
-      # Allow recolor
+   /*   # Allow recolor
       recolor = "true";
 
       # Don't allow original hue when recoloring
@@ -315,7 +315,56 @@
 
       highlight-color	= "#242942";
       highlight-fg = "#a5b6cf";
-      highlight-active-color = "#a5b6cf"; 
+      highlight-active-color = "#a5b6cf"; */
+
+# Dark Decay Theme
+      # Allow recolor
+      recolor = "true";
+
+      # Don't allow original hue when recoloring
+      recolor-keephue = "true";
+  
+      # Don't keep original image colors while recoloring
+      recolor-reverse-video = "false";
+
+      default-fg = "#a1a8b3";
+      default-bg = "rgba(10, 12, 15, 0.95)";
+
+      completion-bg	= "#0a0c0f";
+      completion-fg	= "#a1a8b3";
+      completion-highlight-fg	= "#0a0c0f";
+      completion-highlight-bg	= "#a1a8b3";
+      completion-group-bg	= "#0a0c0f";
+      completion-group-fg	= "#86aaec";
+
+      statusbar-fg = "#a1a8b3";
+      statusbar-bg = "#0a0c0f";
+
+      notification-bg	= "#0a0c0f";
+      notification-fg	= "#a1a8b3";
+      notification-error-bg	= "#0a0c0f";
+      notification-error-fg	= "#e26c7c";
+      notification-warning-bg	= "#0a0c0f";
+      notification-warning-fg	=  "#f2f4d8";
+
+      inputbar-fg	= "#a1a8b3";
+      inputbar-bg = "#0a0c0f";
+
+      recolor-lightcolor	= "rgba(0, 0, 0, 0)";
+      recolor-darkcolor	= "#a1a8b3";
+
+      index-fg	= "#a1a8b3";
+      index-bg = "#0a0c0f";
+      index-active-fg	= "#a1a8b3";
+      index-active-bg	= "#0a0c0f";
+
+      render-loading-bg	= "#0a0c0f";
+      render-loading-fg	= "#a1a8b3";
+
+      highlight-color	= "#202529";
+      highlight-fg = "#a1a8b3";
+      highlight-active-color = "#a1a8b3"; 
+
 
     # Everblush Theme
     /* # Allow recolor

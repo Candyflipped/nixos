@@ -159,10 +159,10 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#86aaec"
+        // active-color "#86aaec"
 
         // Color of the ring on inactive monitors.
-        inactive-color "#1e212e"
+        // inactive-color "#1e212e"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -186,9 +186,14 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         // on
 
+        // Decayce
         width 4
-        active-color "#86aaec"
-        inactive-color "#1e212e"
+        // active-color "#86aaec"
+        // inactive-color "#1e212e"
+
+        // Dark Decay
+         active-color "#75aaf0"
+         inactive-color "#202529"
 
         // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
@@ -259,7 +264,7 @@ environment {
 // Make workspaces four times smaller than normal in the overview.
 overview {
     zoom 0.50
-    backdrop-color "#0d0f18"
+    backdrop-color "#0a0c0f"
 }
 
 cursor {

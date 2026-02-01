@@ -81,9 +81,15 @@
         timeout = 5; */
 
         /* Decay */
-        frame_color = "#8baff1"; 
+        /* frame_color = "#8baff1"; 
         foreground = "#8baff1";
         background = "#0d0f18"; 
+        timeout = 5; */
+
+        /* Dark Decay */
+        frame_color = "#75aaf0"; 
+        foreground = "#a1a8b3";
+        background = "#0a0c0f"; 
         timeout = 5; 
 
         /* Everblush */ 
@@ -130,12 +136,18 @@
         foreground = "#e26c7c";
         background = "#0d0f18"; 
         timeout = 5;*/
+      
+        /* Dark Decay */
+        frame_color = "#e87177"; 
+        foreground = "#e87177";
+        background = "#0a0c0f"; 
+        timeout = 5;
 
         /* Everblush */ 
-        frame_color = "#e57474";
+        /* frame_color = "#e57474";
         foreground = "#e57474";
         background = "#141b1e";
-        timeout = 5; 
+        timeout = 5; */
       };
     };
   };

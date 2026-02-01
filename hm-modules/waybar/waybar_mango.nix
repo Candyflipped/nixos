@@ -233,7 +233,7 @@
           background-color: @background;
         }
 
-        #workspaces,
+        #tags,
         #mode,
         #window,
         #cpu,
@@ -261,22 +261,22 @@
           background-clip: padding-box;
         }
 
-        #workspaces button {
+        #tags button {
           background-color: @alt_background;
           padding: 0 5px;
           min-width: 20px;
           color: @foreground;
         }
 
-        #workspaces button:hover {
+        #tags button:hover {
           background-color: rgba(0, 0, 0, 0)
         }
 
-        #workspaces button.active {
+        #tags button.focused {
           color: @accent;
         }
 
-        #workspaces button.urgent {
+        #tags button.urgent {
           color: @red;
         }
 
@@ -418,31 +418,18 @@
         margin = "8px 10px -2px 10px";
         layer = "top";
 
-        modules-left = ["custom/distro" "niri/workspaces" "niri/window" ];
+        modules-left = ["custom/distro" "dwl/tags" "dwl/window" ];
         modules-center = [];
         modules-right = [ "custom/bitcoin" "group/hardware" "backlight" "pulseaudio" "clock" "tray" "custom/powermenu"];
-
-          "niri/workspaces" = {
-              format = "{icon}"; 
-              format-icons = {
-              one = "";
-              two = "";
-              three = "";
-              four = "";
-              five = "";
-              six = "";
-              seven = "";
-              eight = "";
-              nine = "";
-          };
-              all-outputs = false;
-              disable-click = false;
-              current-only = false; 
-              on-update ="";
-              expand = false;
+          
+          "dwl/tags" = {
+              num-tags = 9;
+              hide-vacant = false;
+              tag-labels = ["1" "2" "3" "4" "5" "6" "7" "8" "9"];
           };
 
-          "niri/window" = {
+
+          "dwl/window" = {
             format = "{title}";
         };
 
